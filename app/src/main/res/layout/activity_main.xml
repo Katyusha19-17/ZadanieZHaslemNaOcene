@@ -6,41 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/TV5"
+    <CheckBox
+        android:id="@+id/ChB5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasła są takie same"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <CheckBox
+        android:id="@+id/ChB4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Znak specjalny"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
+        app:layout_constraintVertical_bias="0.677" />
 
-    <TextView
-        android:id="@+id/TV4"
+    <CheckBox
+        android:id="@+id/ChB3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cyfra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintVertical_bias="0.578" />
 
-    <TextView
-        android:id="@+id/TV3"
+    <CheckBox
+        android:id="@+id/ChB2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mala litera"
+        android:text="Mała litera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintVertical_bias="0.483" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TIL1"
@@ -57,7 +69,8 @@
             android:id="@+id/TIET1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Haslo" />
+            android:hint="Haslo"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -75,30 +88,32 @@
             android:id="@+id/TIET2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Powtorz haslo" />
+            android:hint="Powtorz haslo"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/TV1"
+    <CheckBox
+        android:id="@+id/ChB1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zgodne hasla"
+        android:text="Duża litera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.045"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/TV2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Duza litera"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.389" />
+
+    <Button
+        android:id="@+id/BT1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sprawdź hasła"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
