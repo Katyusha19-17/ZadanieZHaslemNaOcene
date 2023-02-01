@@ -10,13 +10,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var i = 0
         var przycisk = findViewById<Button>(R.id.BT1)
 
         przycisk.setOnClickListener {
             if(findViewById<TextInputEditText>(R.id.TIET1).text.toString() == findViewById<TextInputEditText>(R.id.TIET2).text.toString()){
                 findViewById<CheckBox>(R.id.ChB5).isChecked = true
-            }
-
         }
     }
 }
