@@ -14,8 +14,20 @@ class MainActivity : AppCompatActivity() {
         var przycisk = findViewById<Button>(R.id.BT1)
 
         przycisk.setOnClickListener {
-            if(findViewById<TextInputEditText>(R.id.TIET1).text.toString() == findViewById<TextInputEditText>(R.id.TIET2).text.toString()){
+            var haslo = findViewById<TextInputEditText>(R.id.TIET1)
+
+            if (findViewById<TextInputEditText>(R.id.TIET1).text.toString() == findViewById<TextInputEditText>(R.id.TIET2).text.toString())
+            {
                 findViewById<CheckBox>(R.id.ChB5).isChecked = true
+            }
+            var i = 0
+            i.toInt()
+            var listaLiterkow = mutableListOf<Char>()
+
+            for(i in 1.. haslo.text.toString().length){
+                listaLiterkow[i]=haslo.text.toString().get(i)
+                if(listaLiterkow[i].toUpperCase() == true)
+            }
         }
     }
 }
